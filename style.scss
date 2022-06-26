@@ -1,0 +1,106 @@
+/* import files for use in this scss file */
+@import "variables";
+
+/* Reset padding, margin and box-sizing */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    90deg,
+    #000,
+    #333,
+    #666,
+    #333,
+    #000,
+    #333,
+    #666,
+    #333,
+    #000
+  );
+  color: white;
+}
+
+header {
+  text-align: center;
+
+  h1 {
+    margin: 25px;
+  }
+
+  .searcher {
+    margin-bottom: 20px;
+    width: 30%;
+    border: black 2px solid;
+    padding: 5px;
+
+    &:focus {
+      border: green 5px solid;
+    }
+  }
+
+  #moviefilter-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    li {
+      label {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #movie-finder-list {
+    @include gridsetup(1);
+    li {
+      transition: all 500ms;
+      img {
+        border-radius: 20px;
+      }
+      &:hover {
+        transform: scale(110%);
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #movie-finder-list {
+    @include gridsetup(2);
+    li {
+      transition: all 500ms;
+      img {
+        border-radius: 20px;
+      }
+      &:hover {
+        transform: scale(110%);
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #movie-finder-list {
+    @include gridsetup(3);
+    li {
+      transition: all 500ms;
+      img {
+        border-radius: 20px;
+      }
+      &:hover {
+        transform: scale(110%);
+        opacity: 0.5;
+      }
+    }
+  }
+}

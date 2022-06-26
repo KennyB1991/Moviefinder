@@ -1,0 +1,9 @@
+@mixin gridsetup($columns) {
+  padding: 30px;
+  margin: auto;
+  width: max-content;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat($columns, 100% / $columns);
+  gap: 25px;
+}

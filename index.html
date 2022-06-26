@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Find your movie! - Movie Finder</title>
+  </head>
+  <body>
+    <header>
+      <h1>Film Finder - Find your movie!</h1>
+      <nav>
+        <label for="movie-search">Search your movie here:</label><br />
+        <input
+          class="searcher"
+          id="movie-search"
+          type="search"
+          name="search-engine"
+        />
+        <ul id="moviefilter-list">
+          <li>
+            <input
+              class="filter-btn"
+              type="radio"
+              name="moviefilter"
+              value="newest"
+              id="new-movies"
+            /><label for="new-movies">Latest movies (2014 - present)</label>
+          </li>
+          <li>
+            <input
+              class="filter-btn"
+              type="radio"
+              name="moviefilter"
+              value="avenger"
+              id="avenger-movies"
+            /><label for="avenger-movies">Avenger movies</label>
+          </li>
+          <li>
+            <input
+              class="filter-btn"
+              type="radio"
+              name="moviefilter"
+              value="x-men"
+              id="x-men-movies"
+            /><label for="x-men-movies">X-Men movies</label>
+          </li>
+          <li>
+            <input
+              class="filter-btn"
+              type="radio"
+              name="moviefilter"
+              value="princess"
+              id="princess-movies"
+            /><label for="princess-movies">Princess movies</label>
+          </li>
+          <li>
+            <input
+              class="filter-btn"
+              type="radio"
+              name="moviefilter"
+              value="batman"
+              id="batman-movies"
+            /><label for="batman-movies">Batman movies</label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul id="movie-finder-list"></ul>
+    </main>
+    <footer></footer>
+    <script defer src="movielist.js" type="text/javascript"></script>
+    <script defer src="script.js" type="text/javascript"></script>
+  </body>
+</html>

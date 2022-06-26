@@ -1,0 +1,134 @@
+/* import files for use in this scss file */
+/* Reset padding, margin and box-sizing */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(#333), color-stop(#666), color-stop(#333), color-stop(#000), color-stop(#333), color-stop(#666), color-stop(#333), to(#000));
+  background: linear-gradient(90deg, #000, #333, #666, #333, #000, #333, #666, #333, #000);
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 25px;
+}
+
+header .searcher {
+  margin-bottom: 20px;
+  width: 30%;
+  border: black 2px solid;
+  padding: 5px;
+}
+
+header .searcher:focus {
+  border: green 5px solid;
+}
+
+header #moviefilter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #moviefilter-list li label {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  #movie-finder-list {
+    padding: 30px;
+    margin: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style-type: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+    gap: 25px;
+  }
+  #movie-finder-list li {
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  #movie-finder-list li img {
+    border-radius: 20px;
+  }
+  #movie-finder-list li:hover {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #movie-finder-list {
+    padding: 30px;
+    margin: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style-type: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    gap: 25px;
+  }
+  #movie-finder-list li {
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  #movie-finder-list li img {
+    border-radius: 20px;
+  }
+  #movie-finder-list li:hover {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #movie-finder-list {
+    padding: 30px;
+    margin: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style-type: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (33.33333%)[3];
+        grid-template-columns: repeat(3, 33.33333%);
+    gap: 25px;
+  }
+  #movie-finder-list li {
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  #movie-finder-list li img {
+    border-radius: 20px;
+  }
+  #movie-finder-list li:hover {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=style.css.map */
